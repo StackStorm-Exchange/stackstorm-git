@@ -6,8 +6,8 @@ Pack which allows integration with Git repositories.
 
 * ``url`` - URL to the Git repository you want to monitor. You can use any
   of supported transport protocols such as SSH or HTTP. For example:
-  ``git@github.com:runseb/st2contrib.git`` (SSH transport),
-  ``https://github.com/runseb/st2contrib.git`` (HTTP transport).
+  ``git@github.com:StackStorm/st2.git`` (SSH transport),
+  ``https://github.com/StackStorm/st2.git`` (HTTP transport).
 * ``branch`` - BRANCH to of the Git repository to monitor. 
 
 ## Sensors
