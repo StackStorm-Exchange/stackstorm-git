@@ -15,9 +15,9 @@ TEST_CONFIG = {
             'local_clone_path': '/tmp/.test_st2_',
         },
         {
-            'url': 'https://github.com/StackStorm/st2contrib.git',
+            'url': 'https://github.com/StackStorm-Exchange/stackstorm-git.git',
             'branch': 'master',
-            'local_clone_path': '/tmp/.test_st2contrib_',
+            'local_clone_path': '/tmp/.test_stackstorm-git_',
         },
     ],
 }
