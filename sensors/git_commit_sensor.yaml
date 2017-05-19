@@ -27,6 +27,8 @@
             type: "string"
           committer_tz_offset:
             type: "string"
+          commit_message:
+            type: "string"
           revision:
             type: "string"
           branch:

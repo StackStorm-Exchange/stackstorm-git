@@ -1,0 +1,18 @@
+---
+repositories:
+  description: "Array of Git Repos to monitor"
+  required: true
+  type: "array"
+  items:
+    type: "object"
+    required: true
+    properties:
+      url:
+        description: "URL of Git repo to monitor - can use any suppported protocol"
+        type: "string"
+        required: true
+      branch:
+        description: "Branch to monitor - e.g. master"
+        type: "string"
+        required: true
+        default: master
