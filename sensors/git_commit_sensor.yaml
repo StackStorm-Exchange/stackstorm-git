@@ -18,7 +18,7 @@
           authored_date:
             type: "string"
           author_tz_offset:
-            type: "string"
+            type: "integer"
           committer:
             type: "string"
           committer_email:
@@ -26,7 +26,7 @@
           committed_date:
             type: "string"
           committer_tz_offset:
-            type: "string"
+            type: "integer"
           commit_message:
             type: "string"
           revision:
