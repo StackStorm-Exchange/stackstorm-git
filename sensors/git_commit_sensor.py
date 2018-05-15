@@ -54,7 +54,7 @@ class GitCommitSensor(PollingSensor):
                     self._logger.debug('Pulled info from remote repo. %s', pulled[0].commit)
                 else:
                     self._logger.debug('Nothing pulled from remote repo.')
-            except:
+            except Exception:
                 self._logger.exception('Failed git pull from remote repo.')
 
             head = repo['local'].commit()
