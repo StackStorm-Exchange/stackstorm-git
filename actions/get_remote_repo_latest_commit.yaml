@@ -1,6 +1,6 @@
 ---
 name: get_remote_repo_latest_commit
-runner_type: run-local
+runner_type: local-shell-cmd
 description: "Retrieve SHA of the latest commit for the provided branch in a remote repository."
 enabled: true
 entry_point: ""
