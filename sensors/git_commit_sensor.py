@@ -121,7 +121,7 @@ class GitCommitSensor(PollingSensor):
 
         # create a directory to store cloned repositories
         if not os.path.exists(os.path.dirname(local_path)):
-            os.mkdir(os.path.dirname(local_path), 0755)
+            os.mkdir(os.path.dirname(local_path), 0o755)
 
         if os.path.exists(local_path):
             repo_local = Repo.init(local_path)
