@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.0
+
+- Added 4 new actions
+- `checkout_remote_branch` - checkout a remote branch for a repository
+- `remote_branch_exists` - Check the remote repository if a branch exists
+- `commit_and_push` - Adds all files (.), commits with message (-m), and pushes to remote. Requires SSH certificates inplace and ssh-keyscan already ran against git server (for non interactive), as well as an author alias in `~/.gitconfig`
+- `new_local_branch` - Create a new local branch for a repository
+
 ## 0.4.2
 
 - Version bump to fix tagging issue, no code changes
