@@ -22,5 +22,5 @@ parameters:
     required: true
     position: 3
   cmd:
-    default: "cd {{ local_repo_directory }};git checkout {{ branch_to_push }};git add .;git commit -m '{{ commit_message }}';git push origin {{ branch_to_push }}"
+    default: "cd {{ local_repo_directory }} && git checkout {{ branch_to_push }} && git add . && git commit -m '{{ commit_message }}' && git push origin {{ branch_to_push }}"
     immutable: true

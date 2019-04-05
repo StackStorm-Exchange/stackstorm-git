@@ -16,5 +16,5 @@ parameters:
     required: true
     position: 2
   cmd:
-    default: "cd {{ local_repo_directory }};git fetch;git checkout {{ remote_branch }}"
+    default: "cd {{ local_repo_directory }} && git fetch && git checkout {{ remote_branch }}"
     immutable: true

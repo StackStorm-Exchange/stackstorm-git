@@ -23,5 +23,5 @@ parameters:
     required: true
     position: 3
   cmd:
-    default: "cd {{ local_repo_directory }};git checkout -b {{ new_branch }} {{ source_branch }}"
+    default: "cd {{ local_repo_directory }} && git checkout -b {{ new_branch }} {{ source_branch }}"
     immutable: true
