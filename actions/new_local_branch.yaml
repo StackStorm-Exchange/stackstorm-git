@@ -1,0 +1,27 @@
+---
+name: new__local_branch
+runner_type: remote-shell-cmd
+description: "Create a new local branch for a repository"
+enabled: true
+entry_point: ''
+parameters:
+  local_repo_directory:
+    type: string
+    description: Local path to repo directory
+    required: true
+    position: 1
+  source_branch:
+    type: string
+    description: Source branch to create new branch from
+    default: master
+    required: true
+    position: 2
+  new_branch:
+    type: string
+    description: Name of new branch
+    default: patch_1
+    required: true
+    position: 3
+  cmd:
+    default: "cd {{ local_repo_directory }} && git checkout -b {{ new_branch }} {{ source_branch }}"
+    immutable: true

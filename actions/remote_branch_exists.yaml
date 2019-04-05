@@ -1,0 +1,21 @@
+---
+name: remote_branch_exists
+runner_type: remote-shell-cmd
+description: "Check the remote repository if a branch exists"
+enabled: true
+entry_point: ''
+parameters:
+  repository:
+    type: string
+    description: git repo url
+    required: true
+    position: 1
+  branch:
+    type: string
+    description: branch name to check if exists
+    default: master
+    required: true
+    position: 2
+  cmd:
+    default: "git ls-remote --heads {{ repository }} {{ branch }}"
+    immutable: true

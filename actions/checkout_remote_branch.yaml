@@ -1,0 +1,20 @@
+---
+name: checkout_remote_branch
+runner_type: remote-shell-cmd
+description: "checkout a remote branch for a repository"
+enabled: true
+entry_point: ''
+parameters:
+  local_repo_directory:
+    type: string
+    description: Local path to repo directory
+    required: true
+    position: 1
+  remote_branch:
+    type: string
+    description: remote branch to checkout
+    required: true
+    position: 2
+  cmd:
+    default: "cd {{ local_repo_directory }} && git fetch && git checkout {{ remote_branch }}"
+    immutable: true

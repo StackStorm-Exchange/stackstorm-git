@@ -1,0 +1,26 @@
+---
+name: commit_and_push
+runner_type: remote-shell-cmd
+description: "Adds all files (.), commits with message (-m), and pushes to remote. Requires SSH certificates inplace and ssh-keyscan already ran against git server (for non interactive), as well as an author alias in ~/.gitconfig"
+enabled: true
+entry_point: ''
+parameters:
+  local_repo_directory:
+    type: string
+    description: Local path to repo directory
+    required: true
+    position: 1
+  branch_to_push:
+    type: string
+    description: Branch that should be commited and pushed
+    default: master
+    required: true
+    position: 2
+  commit_message:
+    type: string
+    description: Message to be used for commit (-m)
+    required: true
+    position: 3
+  cmd:
+    default: "cd {{ local_repo_directory }} && git checkout {{ branch_to_push }} && git add . && git commit -m '{{ commit_message }}' && git push origin {{ branch_to_push }}"
+    immutable: true
