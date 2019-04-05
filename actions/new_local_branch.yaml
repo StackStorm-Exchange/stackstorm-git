@@ -1,5 +1,5 @@
 ---
-name: new__local_branch
+name: new_local_branch
 runner_type: remote-shell-cmd
 description: "Create a new local branch for a repository"
 enabled: true
