@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0
+- Update GitPython dependency version to <3.0 (PR #9)
+
+## 0.5.1
+- Fix typo in action name
+
 ## 0.5.0
 
 - Added 4 new actions
