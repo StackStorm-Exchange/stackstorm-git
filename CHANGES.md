@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.1
+
+- Add explicit support for Python 2 and 3
+
 ## 0.6.0
 - Update GitPython dependency version to <3.0 (PR #9)
 
