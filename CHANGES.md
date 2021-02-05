@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+* Drop Python 2.7 support
+
 ## 0.6.1
 
 - Add explicit support for Python 2 and 3
