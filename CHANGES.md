@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0
+
+* Update GitPython to 3.1.40.
+* Change Python version for CI Test from 3.6 to 3.8.
+
 ## 1.0.0
 
 * Drop Python 2.7 support
