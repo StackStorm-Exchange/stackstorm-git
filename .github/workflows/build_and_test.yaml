@@ -15,4 +15,4 @@ jobs:
       enable-common-libs: true
       #apt-cache-version: v0
       #py-cache-version: v0
-      python-version: "3.8
+      python-version: "3.8"
