@@ -10,9 +10,9 @@ jobs:
   # This is mirrored in the release workflow.
   build_and_test:
     name: 'Build and Test'
-    uses: StackStorm-Exchange/ci/.github/workflows/pack-build_and_test.yaml@master
+    uses: StackStorm-Exchange/ci/.github/workflows/pack-build_and_test.yaml@sravs-dev:update_version
     with:
       enable-common-libs: true
       #apt-cache-version: v0
       #py-cache-version: v0
-      python-version: "3.8"
+      python-version: ["3.8","3.9"]
