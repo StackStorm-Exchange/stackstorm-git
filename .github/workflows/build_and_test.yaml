@@ -10,7 +10,7 @@ jobs:
   # This is mirrored in the release workflow.
   build_and_test:
     name: 'Build and Test'
-    uses: sravs-dev/ci/.github/workflows/pack-build_and_test.yaml@update_python_version
+    uses: StackStorm-Exchange/ci/.github/workflows/pack-build_and_test.yaml@master
     with:
       enable-common-libs: true
       #apt-cache-version: v0
