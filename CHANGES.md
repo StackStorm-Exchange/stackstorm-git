@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+
+* Update GitPython to 3.1.41 (security).
+
 ## 2.0.0
 
 * Update GitPython to 3.1.40 (security).
